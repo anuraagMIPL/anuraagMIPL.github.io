@@ -1,85 +1,105 @@
 /* Global Styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Times New Roman', serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #ffffff;
+    color: #000000;
 }
 
 /* Resume Container */
 .container {
-    max-width: 800px;
-    margin: 30px auto;
+    width: 80%;
+    max-width: 900px;
+    margin: 40px auto;
     background: #fff;
-    padding: 30px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    padding: 40px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    border: 2px solid #000;
 }
 
-/* Headers */
+/* Header */
 h1 {
-    color: #222;
+    font-size: 32px;
     text-align: center;
-    font-size: 28px;
     text-transform: uppercase;
-    margin-bottom: 5px;
-}
-h2 {
-    color: #333;
-    font-size: 20px;
+    font-weight: bold;
     margin-bottom: 10px;
-    border-bottom: 2px solid #ddd;
-    padding-bottom: 5px;
 }
+
+h2 {
+    font-size: 22px;
+    font-weight: bold;
+    border-bottom: 2px solid #000;
+    padding-bottom: 5px;
+    margin-top: 30px;
+    text-transform: uppercase;
+}
+
 h3 {
-    color: #444;
     font-size: 18px;
+    font-weight: bold;
     margin-top: 15px;
 }
 
 /* Contact Section */
 .contact p, .contact a {
-    color: #0073e6;
+    font-size: 16px;
+    color: #000000;
     text-decoration: none;
     font-weight: bold;
-    margin: 5px 0;
+    margin: 3px 0;
 }
 
 /* Section Styling */
 .section {
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 }
 
-/* Lists */
-ul {
-    list-style-type: square;
-    padding-left: 20px;
+/* Paragraph and list styling */
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 5px 0;
 }
+
+ul {
+    list-style-type: disc;
+    margin-left: 30px;
+    font-size: 16px;
+}
+
 ul li {
     margin-bottom: 8px;
 }
 
-/* Additional Formatting */
+/* Bold Text */
 .bold {
     font-weight: bold;
 }
+
+/* Gray Text for Minor Details */
 .gray-text {
-    color: gray;
-    font-size: 0.9em;
+    color: #555;
+    font-size: 14px;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
     .container {
+        width: 95%;
         padding: 20px;
     }
     h1 {
-        font-size: 24px;
+        font-size: 28px;
     }
     h2 {
-        font-size: 18px;
+        font-size: 20px;
     }
     h3 {
-        font-size: 16px;
+        font-size: 18px;
+    }
+    p, ul {
+        font-size: 15px;
     }
 }
