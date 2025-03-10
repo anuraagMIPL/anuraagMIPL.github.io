@@ -15,21 +15,40 @@
             max-width: 800px;
             margin: 20px auto;
             background: #fff;
-            padding: 20px;
+            padding: 30px;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
         }
         h1, h2 {
+            color: #222;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+        }
+        h3 {
             color: #333;
+            margin-top: 15px;
         }
         .section {
             margin-bottom: 20px;
         }
-        .contact a {
+        .contact p, .contact a {
+            margin: 5px 0;
             color: #0073e6;
             text-decoration: none;
         }
         ul {
             list-style-type: square;
+            padding-left: 20px;
+        }
+        .bold {
+            font-weight: bold;
+        }
+        .education p, .achievements p {
+            margin: 5px 0;
+        }
+        .gray-text {
+            color: gray;
+            font-size: 0.9em;
         }
     </style>
 </head>
@@ -38,6 +57,7 @@
         <h1>Anuraag Pal</h1>
         <p><strong>Embedded Firmware Engineer</strong></p>
         
+        <!-- CONTACT -->
         <div class="section contact">
             <h2>Contact</h2>
             <p>Email: <a href="mailto:anuraagp071@gmail.com">anuraagp071@gmail.com</a></p>
@@ -46,41 +66,93 @@
             <p>LinkedIn: <a href="https://linkedin.com/in/anuraag-pal-4b50921a8/" target="_blank">linkedin.com/in/anuraag-pal</a></p>
         </div>
         
+        <!-- OBJECTIVE -->
         <div class="section">
             <h2>Objective</h2>
-            <p>Seeking a Sr. Embedded Firmware Developer role where I can apply my expertise in embedded programming, data science, and hardware debugging.</p>
+            <p>Seeking a Sr. Embedded Firmware Developer role where I can apply my expertise in embedded programming, data science, and hardware debugging. Passionate about robotics and embedded systems, I aim to lead teams, drive technological advancements, and develop impactful solutions while achieving financial and career growth.</p>
         </div>
-        
+
+        <!-- ABOUT ME -->
         <div class="section">
-            <h2>Experience</h2>
+            <h2>About Me</h2>
+            <p>With a strong track record of bringing ideas to life and developing innovative systems, I am passionate about robotics and automation. A proven track record of managing and leading high-impact projects, including Smart Batteries for EVs, Kinetic Walls, Smart Haptic Knobs, and motor control optimization research at ISRO. A proficient developer of firmware, system innovation, and team leader who has driven technological advancements.</p>
+        </div>
+
+        <!-- EXPERIENCE -->
+        <div class="section">
+            <h2>Work Experience</h2>
             <h3>Embedded Firmware Engineer - Monarch Innovation Pvt. Ltd. (Sept 2024 - Present)</h3>
             <ul>
-                <li>Developing firmware and handling the embedded team for Smart Battery for EVs.</li>
-                <li>Conducting real-world tests for performance enhancement.</li>
+                <li>Responsible for both firmware development and handling the embedded team for the Project Smart Battery for EVs.</li>
+                <li>Acting as the primary liaison between the client and the development team.</li>
+                <li>Conducting real-world tests to enhance the performance of smart batteries.</li>
             </ul>
-            
+
             <h3>Junior Embedded Firmware Engineer - Monarch Innovation Pvt. Ltd. (Sept 2023 - Sept 2024)</h3>
             <ul>
-                <li>Developed firmware for Smart Locker System, Haptic Smart Knob, and Kinetic Wall projects.</li>
-                <li>Led firmware development showcased in expos like Intersec Saudi Arabia 2024.</li>
+                <li>Developed firmware for Smart Locker System with master control panel and GPRS notifications.</li>
+                <li>Worked on the Haptic Smart Knob to minimize control panel space in electronics.</li>
+                <li>Developed firmware for Kinetic Wall, showcased at Intersec Saudi Arabia 2024 & India Energy Week 2025.</li>
+            </ul>
+
+            <h3>Research and Development Intern - Space Application Center, ISRO (Feb 2023 - May 2023)</h3>
+            <ul>
+                <li>Worked on "Implementation of Motor Control using ARM Cortex-M7."</li>
+                <li>Controlled a BLDC motor using MPLAB X IDE, XC32 Compiler, and HarmonyV3 Configurator.</li>
+                <li>Implemented Field Oriented Control (FOC) with Space Vector Pulse Width Modulation (SVPWM).</li>
+            </ul>
+
+            <h3>Research and Development Intern - Electrogenics Innovations Pvt. Ltd. (Jun 2022 - Jul 2022)</h3>
+            <ul>
+                <li>Developed real-time data acquisition system for infant breathing devices.</li>
+                <li>Received Letters of Recommendation for contributions.</li>
             </ul>
         </div>
-        
-        <div class="section">
+
+        <!-- EDUCATION -->
+        <div class="section education">
             <h2>Education</h2>
             <p><strong>Government Engineering College Gandhinagar, GTU (2019-2023)</strong></p>
-            <p>Bachelor of Engineering in Electronics and Communication Engineering, 8.56 CGPA</p>
+            <p>Bachelor of Engineering, Electronics and Communication Engineering.</p>
+            <p><span class="gray-text">First Class with Distinction (8.56 CGPA)</span></p>
+
+            <p><strong>Kendriya Vidyalaya ONGC (2019)</strong></p>
+            <p>CBSE 12th – Science (PCM: 85%, Mathematics: 95%)</p>
+            <p>CBSE 10th – CGPA 10/10</p>
         </div>
-        
+
+        <!-- SKILLS -->
         <div class="section">
             <h2>Skills</h2>
             <ul>
+                <li>Project Leading and Management</li>
+                <li>Client Handling and Relations</li>
+                <li>Usability Testing and User Research</li>
+                <li>Requirement Analysis</li>
+                <li>Documentation and Presentations</li>
+            </ul>
+        </div>
+
+        <!-- TECHNICAL SKILLS -->
+        <div class="section">
+            <h2>Technical Skills</h2>
+            <ul>
                 <li>Embedded Systems</li>
                 <li>C/C++ Programming</li>
-                <li>Firmware Development</li>
-                <li>Python</li>
-                <li>Robotics</li>
+                <li>Python Programming</li>
+                <li>Firmware and Hardware Debugging</li>
+                <li>ESP32 & Arduino</li>
+                <li>Machine Learning</li>
+                <li>MATLAB & Simulink</li>
             </ul>
+        </div>
+
+        <!-- ACHIEVEMENTS -->
+        <div class="section achievements">
+            <h2>Achievements</h2>
+            <p><strong>1st and 2nd Runner-up</strong> - National Robocon 2021</p>
+            <p><strong>Ranked 9th</strong> - International ABU Robocon 2021</p>
+            <p><strong>Developed Kinetic Wall</strong> - Showcased at Intersec Saudi Arabia 2024 & India Energy Week 2025</p>
         </div>
     </div>
 </body>
