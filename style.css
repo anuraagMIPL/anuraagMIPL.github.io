@@ -7,24 +7,61 @@ body {
     color: #000000;
 }
 
-/* Resume Container */
+/* Resume Container - Two Column Layout */
 .container {
-    width: 80%;
+    display: flex;
     max-width: 900px;
     margin: 40px auto;
     background: #fff;
-    padding: 40px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
     border: 2px solid #000;
 }
 
-/* Header */
+/* Left Blue Section */
+.left-column {
+    width: 35%;
+    background-color: #002147;  /* Dark Blue */
+    color: white;
+    padding: 40px 20px;
+}
+
+.left-column h2 {
+    color: #ffffff;
+    font-size: 20px;
+    border-bottom: 2px solid white;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.left-column p, .left-column ul {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.left-column ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.left-column ul li {
+    margin-bottom: 8px;
+}
+
+/* Right White Section */
+.right-column {
+    width: 65%;
+    background: #ffffff;
+    padding: 40px;
+}
+
+/* Header Styling */
 h1 {
-    font-size: 32px;
+    font-size: 28px;
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
     margin-bottom: 10px;
+    color: #002147;
 }
 
 h2 {
@@ -32,8 +69,9 @@ h2 {
     font-weight: bold;
     border-bottom: 2px solid #000;
     padding-bottom: 5px;
-    margin-top: 30px;
+    margin-top: 20px;
     text-transform: uppercase;
+    color: #002147;
 }
 
 h3 {
@@ -45,7 +83,7 @@ h3 {
 /* Contact Section */
 .contact p, .contact a {
     font-size: 16px;
-    color: #000000;
+    color: white;
     text-decoration: none;
     font-weight: bold;
     margin: 3px 0;
@@ -65,7 +103,7 @@ p {
 
 ul {
     list-style-type: disc;
-    margin-left: 30px;
+    margin-left: 20px;
     font-size: 16px;
 }
 
@@ -87,11 +125,18 @@ ul li {
 /* Responsive Design */
 @media (max-width: 768px) {
     .container {
-        width: 95%;
+        flex-direction: column;
+    }
+    .left-column {
+        width: 100%;
+        text-align: center;
+    }
+    .right-column {
+        width: 100%;
         padding: 20px;
     }
     h1 {
-        font-size: 28px;
+        font-size: 24px;
     }
     h2 {
         font-size: 20px;
